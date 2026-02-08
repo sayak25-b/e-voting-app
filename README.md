@@ -30,8 +30,6 @@ A secure **Voting Application Backend** built with **Node.js, Express, MongoDB, 
 * Admin accounts are **restricted from voting**
 * Votes are counted and displayed in real time
 
----
-
 ## 🧩 Tech Stack
 
 * **Backend:** Node.js, Express.js
@@ -39,8 +37,6 @@ A secure **Voting Application Backend** built with **Node.js, Express, MongoDB, 
 * **Authentication:** JWT (JSON Web Token)
 * **Password Security:** bcrypt
 * **API Testing:** Postman
-
----
 
 ## 📂 Database Models
 
@@ -65,8 +61,6 @@ A secure **Voting Application Backend** built with **Node.js, Express, MongoDB, 
   voteCount: { type: Number, default: 0 }
 }
 ```
-
----
 
 ## 🔐 Authentication Routes
 
@@ -142,26 +136,8 @@ MONGO_URI=your_mongodb_connection_string
 JWT_SECRET=your_jwt_secret
 ```
 
----
 
 ## 🧪 Testing
 
 * Use **Postman** to test APIs
 * Include JWT token in `Authorization` header
-
----
-
-## 📌 Future Improvements
-
-* Frontend (React)
-* OTP verification for Aadhar
-* Vote result dashboard
-* Election scheduling
-
----
-
-## 📄 License
-
-This project is for **educational purposes**.
-
-
