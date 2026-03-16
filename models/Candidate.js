@@ -15,6 +15,14 @@ const candidateSchema = new mongoose.Schema({
         type:Number,
         required:true
     },
+    AssemblyConstituency:{
+        type:String,
+        required:true
+    },
+    state:{
+        type:String,
+        default:'West Bengal'
+    },
     votes:[
         {
             user:{
