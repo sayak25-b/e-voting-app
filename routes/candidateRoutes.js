@@ -43,6 +43,18 @@ router.post('/', jwtAuthMiddleware, async (req, res) => {
     res.status(500).json({ error: 'Internal Server Error' });
   }
 });
+router.get('/', async (req, res) => {
+  try {
+
+    const candidates = await Candidate.find();
+
+    res.status(200).json(candidates);
+
+  } catch (error) {
+    console.log(error);
+    res.status(500).json({ error: "Internal server error" });
+  }
+});
 
 // PUT method to update the candidate
 router.put('/:candidateID', jwtAuthMiddleware, async (req, res) => {
